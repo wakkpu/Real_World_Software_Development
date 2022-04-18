@@ -40,6 +40,7 @@ public class BankStatementTxtParser {
         return new BankTransaction(date, amount, description);
     }
 
+
     public List<BankTransaction> parseLinesFromTxt(final List<String> lines) {
         final List<BankTransaction> bankTransactions = new ArrayList<>();
         for(final String line: lines) {
